@@ -1,1 +1,2 @@
-# spiderrobot
+# Intro
+My first foray into robotics, after a considerable time away from real-time process control systems and embedded development, ca. 30 years. This is a prototype 8-legged spider with 2 pincers, 2 cameras for eyes, moving vision, and a mandible with pointy teeth to scare the little children, all made mode LEGO Technic. The MCU is an ESP32 Dev module, and software is written in C++ (none of this interpreted Python stuff here, mate!) and the FreeRTOS O/S, using PlatformIO on Visual Code as the development environment, all done on Linux of course. Initially most of the code will be experimental in nature and not much use to anyone, but the pictures ma tempt you to start building or improving your own LEGO Spider Robot.
