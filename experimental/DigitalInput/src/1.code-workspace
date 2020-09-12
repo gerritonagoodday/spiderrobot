@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../PIO05"
+		},
+		{
+			"name": "InputClass",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}
