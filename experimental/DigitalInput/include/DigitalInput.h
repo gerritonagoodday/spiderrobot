@@ -1,6 +1,8 @@
 #ifndef _DIGITAL_INPUT_H_
 #define _DIGITAL_INPUT_H_
 
+#include <map>
+#include <assert.h>
 #include <string>
 #include <iostream>
 #include <typeinfo>
@@ -36,8 +38,8 @@ class DigitalInput {
     // Interrupt payload:
     int     now_state;
     int64_t now_time;
-    int     last_state;
-    int64_t last_time;
+    int     prev_state;
+    int64_t prev_time;
     bool    settled;
 
     // These statics would normally be declared as inline for C++17, but for now we declare them 
@@ -48,13 +50,12 @@ class DigitalInput {
     static int64_t gpio_input_isr_counter;
     static int gpio_input_high_count;
     static int gpio_input_total_count; // number of input classes defined
+    //static std::map<gpio_num_t, DigitalInput*> instances;
 
     // Logging for all classes
-    static const char * TAG;
-    // Logging for each class instance
-  private:
     std::string s_tag;
-  public:
+    static const char * TAG;
+    // Logging for each class instance    
     const char * tag;
     
     // Interrupt Service Routine - Passed in as argument is "this" class,
