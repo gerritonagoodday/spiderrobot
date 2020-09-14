@@ -27,4 +27,4 @@ See main.cpp: 4 instances of class DigitalInput are created and then a task Read
 and displays the active results. The main programm displays the recorded states of these 4 classes. They should be same. 
 A supervisory task corrects them if they are not.
 
-![Breadboard layout](/fritzing/DigitalIinputTest.png)
+![Breadboard layout](/fritzing/DigitalInputTest.png)
