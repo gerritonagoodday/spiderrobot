@@ -32,8 +32,7 @@ class DigitalInput {
     // Configuration    
     gpio_num_t gpio_num;
     std::string name;
-    std::string desc;
-    DigitalInput * self;
+    std::string desc;    
 
     // Interrupt payload:
     int     now_state;
@@ -50,7 +49,7 @@ class DigitalInput {
     static int64_t gpio_input_isr_counter;
     static int gpio_input_high_count;
     static int gpio_input_total_count; // number of input classes defined
-    //static std::map<gpio_num_t, DigitalInput*> instances;
+    static std::map<gpio_num_t, DigitalInput*> instances;
 
     // Logging for all classes
     std::string s_tag;
@@ -61,6 +60,9 @@ class DigitalInput {
     // Interrupt Service Routine - Passed in as argument is "this" class,
     // which is accessed as follows: DigitalInput * p = reinterpret_cast<DigitalInput*>(arg);
     static void ISR(void* arg);
+    // Supervisor task
+    static TaskHandle_t xSupervisorTaskHandle;
+    static void SupervisorTask(void * arg);
 
     void CheckOnSettleTime();
 };

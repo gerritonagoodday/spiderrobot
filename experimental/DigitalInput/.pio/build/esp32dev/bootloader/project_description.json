@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "/home/gerrit/.platformio/packages/framework-espidf/components/bootloader/subproject",
-    "build_dir":          "/home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev/bootloader",
-    "config_file":        "/home/gerrit/Documents/Spider/Code/DigitalInput/sdkconfig",
+    "build_dir":          "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev/bootloader",
+    "config_file":        "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",

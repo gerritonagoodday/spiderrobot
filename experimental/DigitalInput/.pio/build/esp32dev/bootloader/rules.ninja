@@ -175,7 +175,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/gerrit/.platformio/packages/tool-cmake/bin/cmake -S/home/gerrit/.platformio/packages/framework-espidf/components/bootloader/subproject -B/home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev/bootloader
+  command = /home/gerrit/.platformio/packages/tool-cmake/bin/cmake -S/home/gerrit/.platformio/packages/framework-espidf/components/bootloader/subproject -B/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev/bootloader
   description = Re-running CMake...
   generator = 1
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/gerrit/Documents/Spider/Code/DigitalInput
+# Install script for directory: /home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev/esp-idf/cmake_install.cmake")
+  include("/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

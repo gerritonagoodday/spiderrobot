@@ -1337,7 +1337,7 @@ rule CXX_STATIC_LIBRARY_LINKER____idf_src
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/gerrit/.platformio/packages/tool-cmake/bin/cmake -S/home/gerrit/Documents/Spider/Code/DigitalInput -B/home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev
+  command = /home/gerrit/.platformio/packages/tool-cmake/bin/cmake -S/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput -B/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev
   description = Re-running CMake...
   generator = 1
 

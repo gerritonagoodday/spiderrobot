@@ -1,4 +1,4 @@
-# Install script for directory: /home/gerrit/Documents/Spider/Code/DigitalInput/src
+# Install script for directory: /home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

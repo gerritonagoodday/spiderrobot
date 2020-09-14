@@ -1,4 +1,4 @@
-# Install script for directory: /home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev/__pio_env
+# Install script for directory: /home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev/__pio_env
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

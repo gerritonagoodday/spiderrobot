@@ -7,7 +7,8 @@ int64_t DigitalInput::gpio_input_isr_counter = 0;
 const char * DigitalInput::TAG = "DIN";
 int DigitalInput::gpio_input_high_count=0;
 int DigitalInput::gpio_input_total_count=0;
-
+TaskHandle_t DigitalInput::xSupervisorTaskHandle=0;
+std::map<gpio_num_t, DigitalInput*> DigitalInput::instances;
 
 // Constructor
 DigitalInput::DigitalInput(gpio_num_t _gpio_num, const char * _name, const char * _desc){
@@ -17,16 +18,18 @@ DigitalInput::DigitalInput(gpio_num_t _gpio_num, const char * _name, const char 
     DigitalInput::gpio_input_queue = xQueueCreate(10, sizeof(void *));
     // install gpio isr service    
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
+    // Create settling task to supervise all digital inputs
+    xTaskCreate(DigitalInput::SupervisorTask,"DigitalInput::SupervisorTask",2048,NULL,10,&DigitalInput::xSupervisorTaskHandle);
   }
 
-  // Self registration
-  //instances[_gpio_num] = this;
+  // Self registration to a map of all other class instances like this
+  instances[_gpio_num] = this;
 
   // instrumentation
   gpio_num = _gpio_num;
   name.append(_name);
   desc.append(_desc);
-  self     = nullptr;
+  
   // state controll
   now_state  = 0;
   prev_state = 0;
@@ -84,7 +87,7 @@ DigitalInput::DigitalInput(const DigitalInput &c){
     s_tag      = s_tag;
     tag        = s_tag.c_str();    
     settled    = false;
-    self       = nullptr;
+    //self       = nullptr;
     DigitalInput::gpio_input_total_count++;
 }
 
@@ -97,7 +100,7 @@ DigitalInput::~DigitalInput(){
 
 // On settingling time, check if rising or falling edges were correctly detected
 void DigitalInput::CheckOnSettleTime(){
-  assert(("This class-instance has not been assigned to member 'self'.",self!=NULL));
+  //assert(("This class-instance has not been assigned to member 'self'.",self!=NULL));
   int64_t _now_time = esp_timer_get_time();
   if(settled == false){
     if(_now_time - now_time > GPIO_INPUT_DEBOUNCE_SETTLE_TIME){
@@ -124,14 +127,10 @@ void DigitalInput::CheckOnSettleTime(){
         // Publish correction
         DigitalInput * p = this;
         xQueueSendToBack(DigitalInput::gpio_input_queue, (void*)&p, 0);
-        
-        // xQueueSendToBack(DigitalInput::gpio_input_queue, (void*)&self, 0);
       }
     }
   }
 }
-
-
   
 // Interrupt Service Routine - Passed in as argument is "this" class,
 // which is accessed as follows: DigitalInput * p = reinterpret_cast<DigitalInput*>(arg);
@@ -166,7 +165,7 @@ void DigitalInput::ISR(void* arg){
       
       // Update count of high states and clamp 
       if(_now_state == 0){
-        gpio_input_high_count--;
+        gpio_input_high_count--; 
         if(gpio_input_high_count<0){
           gpio_input_high_count=0;
         }
@@ -179,6 +178,26 @@ void DigitalInput::ISR(void* arg){
 
       // Publish result
       xQueueSendToBackFromISR(DigitalInput::gpio_input_queue, static_cast<void*>(&p), 0);
+    }
+  }
+}
+
+// Supervisor task for digital inputs
+// Since the inputs responses are measured at at accuracy of no less than 20ms for close
+// transition and 200ms for open transition, and the settling time for a transition is 400ms,
+// a sampling interval at 100ms is sufficient to to double-check the state of noisy inputs
+void DigitalInput::SupervisorTask(void * arg){  
+  // The Ticker runs at 100 ticks a second, e.g. 100ms = 10 ticks.  
+  const TickType_t interval = 10;
+  // Initialise the xLastWakeTime variable with the current time.
+  TickType_t xLastWakeTime = xTaskGetTickCount();
+  for( ;; )  {
+    // Wait for the next cycle.
+    vTaskDelayUntil( &xLastWakeTime, interval);
+    // Run supervisory action on all registered digital inputs
+    for(std::map<gpio_num_t, DigitalInput*>::iterator it = instances.begin(); it != instances.end(); it++){        
+      DigitalInput* p = static_cast<DigitalInput*>(it->second);      
+      p->CheckOnSettleTime();
     }
   }
 }

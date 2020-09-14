@@ -6,11 +6,11 @@
         {
             "name": "Linux",
             "includePath": [
-                "/home/gerrit/Documents/Spider/Code/DigitalInput/include",
-                "/home/gerrit/Documents/Spider/Code/DigitalInput/src",
+                "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/include",
+                "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/src",
                 "/home/gerrit/.platformio/packages/framework-espidf/components/xtensa/include",
                 "/home/gerrit/.platformio/packages/framework-espidf/components/xtensa/esp32/include",
-                "/home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev/config",
+                "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev/config",
                 "/home/gerrit/.platformio/packages/framework-espidf/components/newlib/platform_include",
                 "/home/gerrit/.platformio/packages/framework-espidf/components/freertos/include",
                 "/home/gerrit/.platformio/packages/framework-espidf/components/heap/include",
@@ -102,11 +102,11 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/gerrit/Documents/Spider/Code/DigitalInput/include",
-                    "/home/gerrit/Documents/Spider/Code/DigitalInput/src",
+                    "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/include",
+                    "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/src",
                     "/home/gerrit/.platformio/packages/framework-espidf/components/xtensa/include",
                     "/home/gerrit/.platformio/packages/framework-espidf/components/xtensa/esp32/include",
-                    "/home/gerrit/Documents/Spider/Code/DigitalInput/.pio/build/esp32dev/config",
+                    "/home/gerrit/Documents/Spider/spiderrobot/experimental/DigitalInput/.pio/build/esp32dev/config",
                     "/home/gerrit/.platformio/packages/framework-espidf/components/newlib/platform_include",
                     "/home/gerrit/.platformio/packages/framework-espidf/components/freertos/include",
                     "/home/gerrit/.platformio/packages/framework-espidf/components/heap/include",
