@@ -4,6 +4,6 @@ This is my first foray into robotics after a considerable time away from real-ti
 
 Initially most of the code will be experimental in nature and not much use to anyone, but the pictures may tempt you to start building or improving your own LEGO Spider Robot. Suggestions welcome. 
 
-![Head Assembly](assets/images/SN31/head%20assembly/IMG_20200820_183156.jpg | width=300)
+![Head Assembly](assets/images/SN31/head%20assembly/IMG_20200820_183156.jpg =300x)
 
-![Breadboard layout](fritzing/spider_breadboard_layout.png) | width=300
+![Breadboard layout](fritzing/spider_breadboard_layout.png) =300x
