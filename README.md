@@ -24,13 +24,17 @@ Initially most of the code will be experimental in nature and not much use to an
 
 This makes for a total of 33 servo motors and 2 stepper motors. These are combined with LEGO Technic in interesting ways, mostly using a combinations of hot-glue and cable ties. There is a a fair bit of wiring and if you don't keep it in a tidy and controlled state, inevitable unhappiness and frustration will ensue, so bundle cables up in bunches using a spirally-cut straws (still free from Subways) or commercial, spiral cable wrap (a quid a metre).
 
+## Third-Party Libraries
+
 The significant third-party libraries in use here are:
 * ArduinoJson - "The best JSON library for embedded C++", https://arduinojson.org 
+
+## Documentations
 
 Some fine technical documentation to accompany all this:
 * ESP32 API Reference, https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference
 * FreeRTOS Operating System Reference, https://www.freertos.org/Documentation/RTOS_book.html
-
+* ArduinoJson Tutorial "The Ultimate Guide to Master ArduinoJson", https://arduinojson.org/book
 
 # Pictures
 
