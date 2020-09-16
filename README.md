@@ -27,6 +27,13 @@ This makes for a total of 33 servo motors and 2 stepper motors. These are combin
 The significant third-party libraries in use here are:
 * ArduinoJson - "The best JSON library for embedded C++", https://arduinojson.org 
 
+Some fine technical documentation to accompany all this:
+* ESP32 API Reference, https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference
+* FreeRTOS Operating System Reference, https://www.freertos.org/Documentation/RTOS_book.html
+
+
+# Pictures
+
 ![Head Assembly](assets/images/SN31/head%20assembly/IMG_20200820_183156.jpg)
 
 ![Breadboard layout](fritzing/spider_breadboard_layout.png) 
