@@ -1,0 +1,3 @@
+source "/home/gerrit/git/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/gerrit/git/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/gerrit/git/esp-idf/components/partition_table/Kconfig.projbuild"
