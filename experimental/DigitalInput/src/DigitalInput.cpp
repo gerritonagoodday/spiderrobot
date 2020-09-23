@@ -11,7 +11,9 @@ TaskHandle_t DigitalInput::xSupervisorTaskHandle=0;
 std::map<gpio_num_t, DigitalInput*> DigitalInput::instances;
 
 // Constructor
-DigitalInput::DigitalInput(gpio_num_t _gpio_num, const char * _name, const char * _desc){
+DigitalInput::DigitalInput(gpio_num_t _gpio_num, const char * _name, const char * _desc):  
+  gpio_num(_gpio_num)  // instrumentation
+{
   // Create queue if it does not exist yet & set up interrupt service for the first time
   if(DigitalInput::gpio_input_queue == NULL ){
     ESP_LOGW(DigitalInput::TAG,"Creating input queue");
@@ -25,11 +27,9 @@ DigitalInput::DigitalInput(gpio_num_t _gpio_num, const char * _name, const char 
   // Self registration to a map of all other class instances like this
   instances[_gpio_num] = this;
 
-  // instrumentation
-  gpio_num = _gpio_num;
   name.append(_name);
   desc.append(_desc);
-  
+
   // state controll
   now_state  = 0;
   prev_state = 0;
