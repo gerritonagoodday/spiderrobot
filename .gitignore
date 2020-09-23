@@ -1,2 +1,6 @@
 assets
-
+**/.pio
+**/.vscode
+*.elf
+*.o
+*.bin
