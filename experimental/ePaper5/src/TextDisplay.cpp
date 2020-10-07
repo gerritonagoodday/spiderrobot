@@ -53,7 +53,8 @@ void helloWorldForDummies(GxEPD2_GFX& display)
   //Serial.println("helloWorld");
   const char text[] = "Hello World!";
   // most e-papers have width < height (portrait) as native orientation, especially the small ones
-  // in GxEPD2 rotation 0 is used for native orientation (most TFT libraries use 0 fix for portrait orientation)
+  // in GxEPD2 rotation 0 is used for native orhtop
+  ientation (most TFT libraries use 0 fix for portrait orientation)
   // set rotation to 1 (rotate right 90 degrees) to have enough space on small displays (landscape)
   display.setRotation(1);
   // select a suitable font in Adafruit_GFX

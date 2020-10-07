@@ -1,0 +1,60 @@
+{
+	"folders": [
+		{
+			"name": "ePaper7_296x128",
+			"path": "../ePaper7_296x128"
+		},
+		{
+			"name": "epaper11_Digits",
+			"path": "."
+		},
+		{
+			"name": "ePaper3",
+			"path": "../ePaper3"
+		},
+		{
+			"name": "ePaper4",
+			"path": "../ePaper4"
+		},
+		{
+			"name": "ePaper8_296x128",
+			"path": "../ePaper8_296x128"
+		},
+		{
+			"name": "ePaper9_Clock",
+			"path": "../ePaper9_Clock"
+		},
+		{
+			"name": "ePaper5",
+			"path": "../ePaper5"
+		},
+		{
+			"name": "ePaperHelloWorld",
+			"path": "../ePaperHelloWorld"
+		},
+		{
+			"name": "ePaper6",
+			"path": "../ePaper6"
+		},
+		{
+			"name": "GxEPD2HelloWorld",
+			"path": "../GxEPD2HelloWorld"
+		},
+		{
+			"name": "GxEPD2HelloWorldFreeRTOS",
+			"path": "../GxEPD2HelloWorldFreeRTOS"
+		},
+		{
+			"name": "bmp2c",
+			"path": "../../../../../git/bmp2c"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"hash_map": "cpp",
+			"bitset": "cpp",
+			"chrono": "cpp",
+			"algorithm": "cpp"
+		}
+	}
+}

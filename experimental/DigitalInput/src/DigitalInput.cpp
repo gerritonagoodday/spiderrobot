@@ -1,3 +1,6 @@
+// Based on the exampole code  in 
+// https://github.com/espressif/esp-idf/blob/8bc19ba893e5544d571a753d82b44a84799b94b1/examples/peripherals/gpio/main/gpio_example_main.c
+
 #include "DigitalInput.h"
 
 // Static members initialization
@@ -96,7 +99,6 @@ DigitalInput::DigitalInput(const DigitalInput &c){
 DigitalInput::~DigitalInput(){
   gpio_isr_handler_remove(gpio_num);
 }
-
 
 // On settingling time, check if rising or falling edges were correctly detected
 void DigitalInput::CheckOnSettleTime(){

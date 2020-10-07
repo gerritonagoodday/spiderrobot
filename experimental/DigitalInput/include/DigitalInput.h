@@ -41,6 +41,10 @@ class DigitalInput {
     int64_t prev_time;
     bool    settled;
 
+    bool getState(){return now_state;}
+    uint getGPIONum(){return gpio_num;}
+
+
     // These statics would normally be declared as inline for C++17, but for now we declare them 
     // in the cpp file until the ESP compiler supports this standard. Then add this to file
     // platformio.ini: build_flags = -std=c++17

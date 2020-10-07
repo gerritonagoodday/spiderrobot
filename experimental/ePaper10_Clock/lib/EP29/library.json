@@ -1,0 +1,31 @@
+{
+  "name": "EP29",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": "EPS32, ePaper, Waveshare, espidf, espressif32, GxEPD",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/gerritonagoodday/"
+  },
+  "authors":
+  [
+    {
+      "name": "Gerrit Hoekstra",
+      "email": "gerrit@hoekstra.co.uk",
+      "url": "https://github.com/gerritonagoodday",
+      "maintainer": true
+    },
+    {
+      "name": "Original Author: Element14",
+      "email": "",
+      "url": ""      
+    }
+  ],
+  "license": "GPL2",
+  "homepage": "https://hoekstra.co.uk",
+  "dependencies": {
+  },
+  "frameworks": "espidf",
+  "platforms": "espressif32"
+}
