@@ -1,0 +1,34 @@
+{
+  "name": "GxEPDESP32",
+  "version": "1.0.0",
+  "description": "Fork from Arduino-based GxEPD2 library 1.2.12 by Jean-Marc Zingg (see https://github.com/ZinggJM/GxEPD2 ) for the ESP32 board / espressif32 platform, using the espidf framework.",
+  "keywords": "EPS32, ePaper, Waveshare, espidf, espressif32, GxEPD",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/gerritonagoodday/GxEPDESP32"
+  },
+  "authors":
+  [
+    {
+      "name": "Gerrit Hoekstra",
+      "email": "gerrit@hoekstra.co.uk",
+      "url": "https://github.com/gerritonagoodday/GxEPDESP32",
+      "maintainer": true
+    },
+    {
+      "name": "Original Author: Jean-Marc Zingg",
+      "email": "",
+      "url": "https://github.com/ZinggJM/GxEPD2"      
+    }
+  ],
+  "license": "GPL2",
+  "homepage": "https://hoekstra.co.uk",
+  "dependencies": {
+    "adafruit/Adafruit GFX Library": "^1.10.1",
+    "adafruit/Adafruit_GFX_RK": "1.3.5",
+    "adafruit/Adafruit BusIO": "^1.5.0"
+  },
+  "frameworks": "espidf",
+  "platforms": "espressif32"
+}

@@ -6,6 +6,7 @@
 extern "C" {
 #endif    
     void app_main(void);
+    void ReadQueueTask(void* arg);
 #ifdef __cplusplus    
 }
 #endif
