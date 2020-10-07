@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module fritzingVersion="0.5.2b.02.18.4756" moduleId="Waveshare_2426e10d892e078e17bff3f060993080_18" referenceFile="2.9in eInk rev B.fzp">
+ <version>4</version>
+ <date>Fri Oct 2 2020</date>
+ <author>GBH</author>
+ <description>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:18px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#ffffff;">&lt;span style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:15px; color:#737373; background-color:#ffffff;">This is an E-Ink display module, 2.9inch, 296x128 resolution, with embedded controller, communicating via SPI interface, supports partial refresh.&lt;/span>&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:18px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#ffffff;">&lt;span style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:15px; color:#737373; background-color:#ffffff;">Due to the advantages like ultra low power consumption, wide viewing angle, clear display without electricity, it is an ideal choice for applications such as shelf label, industrial instrument, and so on.&lt;/span>&lt;/p>
+&lt;h2 style=" margin-top:34px; margin-bottom:34px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:110%; background-color:#ffffff;">&lt;span style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:x-large; font-weight:600; color:#565656; background-color:#ffffff;">Features&lt;/span>&lt;/h2>
+&lt;ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;">&lt;li style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:15px; color:#737373;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:15px;">No backlight, keeps displaying last content for a long time even when power down&lt;/span>&lt;/li>
+&lt;li style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:15px; color:#737373;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:15px;">Ultra low power consumption, basically power is only required for refreshing&lt;/span>&lt;/li>
+&lt;li style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:15px; color:#737373;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:15px;">SPI interface, for connecting with controller boards like Raspberry Pi/Arduino/Nucleo, etc.&lt;/span>&lt;/li>
+&lt;li style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:15px; color:#737373;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:15px;">Onboard voltage translator, compatible with 3.3V/5V MCUs&lt;/span>&lt;/li>
+&lt;li style=" font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:15px; color:#737373;" style=" margin-top:0px; margin-bottom:18px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:15px;">Comes with development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32)&lt;/span>&lt;/li>&lt;/ul>&lt;/body>&lt;/html></description>
+ <title>Waveshare 2.9" eInk Display Breakout</title>
+ <tags>
+  <tag>e-Paper</tag>
+  <tag>e-Ink</tag>
+ </tags>
+ <properties>
+  <property name="variant">variant 2</property>
+  <property name="family">Waveshare eInk Display </property>
+  <property name="Brand">Waveshare</property>
+  <property name="UPC">614961950528</property>
+  <property name="SKU">12956</property>
+ </properties>
+ <views>
+  <breadboardView>
+   <layers image="breadboard/Waveshare_2426e10d892e078e17bff3f060993080_18_breadboard.svg">
+    <layer layerId="breadboard"/>
+   </layers>
+  </breadboardView>
+  <schematicView>
+   <layers image="schematic/Waveshare_2426e10d892e078e17bff3f060993080_18_schematic.svg">
+    <layer layerId="schematic"/>
+   </layers>
+  </schematicView>
+  <pcbView> 
+   <layers image="pcb/Waveshare_2426e10d892e078e17bff3f060993080_18_pcb.svg">
+    <layer layerId="copper1"/>
+    <layer layerId="silkscreen"/>
+    <layer layerId="copper0"/>
+   </layers>
+  </pcbView>
+  <iconView>
+   <layers image="icon/Waveshare_2426e10d892e078e17bff3f060993080_18_icon.svg">
+    <layer layerId="icon"/>
+   </layers>
+  </iconView>
+ </views>
+ <connectors>
+
+  <connector name="VCC" id="connector1" type="male">
+   <description>VCC</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector1pin"/>
+    </breadboardView>
+    <schematicView>    
+     <p layer="schematic" svgId="connector1pin" terminalId="connector1pad"/>
+    </schematicView>
+    <pcbView>    
+     <p layer="copper0" svgId="connector1pin"/>
+     <p layer="copper1" svgId="connector1pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+  <connector name="GND" id="connector2" type="male">
+   <description>GND</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector2pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector2pin" terminalId="connector2pad"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector2pin"/>
+     <p layer="copper1" svgId="connector2pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+  <connector name="DIN" id="connector3" type="male">
+   <description>DIN</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector3pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector3pin" terminalId="connector3pad"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector3pin"/>
+     <p layer="copper1" svgId="connector3pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+
+  <connector name="CLK" id="connector4" type="male">
+   <description>CLK</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector4pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector4pin" terminalId="connector4pad"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector4pin"/>
+     <p layer="copper1" svgId="connector4pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+  <connector name="CS" id="connector5" type="male">
+   <description>CS</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector5pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector5pin" terminalId="connector5pad"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector5pin"/>
+     <p layer="copper1" svgId="connector5pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+
+  <connector name="DC" id="connector6" type="male">
+   <description>DC</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector6pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector6pin" terminalId="connector6pad"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector6pin"/>
+     <p layer="copper1" svgId="connector6pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+
+  <connector name="RST" id="connector7" type="male">
+   <description>RESET</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector7pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector7pin" terminalId="connector7pad"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector7pin"/>
+     <p layer="copper1" svgId="connector7pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+  <connector name="BUSY" id="connector8" type="male">
+   <description>BUSY</description>
+   <views>
+    <breadboardView>
+     <p layer="breadboard" svgId="connector8pin"/>
+    </breadboardView>
+    <schematicView>
+     <p layer="schematic" svgId="connector8pin" terminalId="connector8pad"/>
+    </schematicView>
+    <pcbView>
+     <p layer="copper0" svgId="connector8pin"/>
+     <p layer="copper1" svgId="connector8pin"/>
+    </pcbView>
+   </views>
+  </connector>
+
+ </connectors>
+ <buses/>
+ <url>https://www.waveshare.com/2.9inch-e-paper-module.htm</url>
+</module>
