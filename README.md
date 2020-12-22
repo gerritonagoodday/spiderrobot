@@ -40,18 +40,25 @@ Some fine technical documentation to accompany all this:
 
 All pictures are dumped in assets/images. Here is a selection of a view pertinent ones:
 
+Head Assembly:
 ![Head Assembly](assets/images/SN31/head%20assembly/IMG_20200820_183156.jpg)
 
+Breadboard layout:
 ![Breadboard layout](fritzing/spider_bb.png) 
 
-![MCU Controller Board](assets/images/SN31/circuit boards/IMG_20200906_150346.jpg) 
+MCU Controller Board:
+![MCU Controller Board](assets/images/SN31/circuit%20boards/IMG_20200906_150346.jpg) 
 
-![Servo Controller Board](assets/images/SN31/circuit boards/IMG_20200822_130836.jpg) 
+Servo Controller Board:
+![Servo Controller Board](assets/images/SN31/circuit%20boards/IMG_20200822_130836.jpg) 
 
+Legs:
 ![Legs](assets/images/SN31/legs/IMG_20200822_095125.jpg) 
 
+Pincers:
 ![Pincers](assets/images/SN31/pincers/IMG_20200823_124845.jpg) 
 
+A partially-complete build:
 ![Partially complete](assets/images/SN30/IMG_20200731_232911.jpg) 
 
 
