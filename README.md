@@ -29,7 +29,7 @@ This makes for a total of 33 servo motors and 2 stepper motors. These are combin
 The significant third-party libraries in use here are:
 * ArduinoJson - "The best JSON library for embedded C++", https://arduinojson.org 
 
-## Documentations
+## Documentation Sources
 
 Some fine technical documentation to accompany all this:
 * ESP32 API Reference, https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference
@@ -38,6 +38,20 @@ Some fine technical documentation to accompany all this:
 
 # Pictures
 
+All pictures are dumped in assets/images. Here is a selection of a view pertinent ones:
+
 ![Head Assembly](assets/images/SN31/head%20assembly/IMG_20200820_183156.jpg)
 
-![Breadboard layout](fritzing/spider_breadboard_layout.png) 
+![Breadboard layout](fritzing/spider_bb.png) 
+
+![MCU Controller Board](assets/images/SN31/circuit boards/IMG_20200906_150346.jpg) 
+
+![Servo Controller Board](assets/images/SN31/circuit boards/IMG_20200822_130836.jpg) 
+
+![Legs](assets/images/SN31/legs/IMG_20200822_095125.jpg) 
+
+![Pincers](assets/images/SN31/pincers/IMG_20200823_124845.jpg) 
+
+![Partially complete](assets/images/SN30/IMG_20200731_232911.jpg) 
+
+
